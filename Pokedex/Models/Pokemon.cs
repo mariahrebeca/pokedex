@@ -12,11 +12,10 @@ namespace Pokedex.Models
         public double Peso { get; set; }
         public string Imagem { get; set; }
 
-        //Metodo Construtor
+        // Método Construtor
         public Pokemon()
         {
             Tipo = new List<string>();
         }
-        
     }
 }

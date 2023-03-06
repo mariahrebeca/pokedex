@@ -13,17 +13,14 @@ public class HomeController : Controller
     {
         _logger = logger;
     }
+
     public IActionResult Index()
     {
-        string arquivo = @"Data\pokemons.json";
-        using (StreamReader leitor = new StreamReader(arquivo))
-        {
-            string dados = leitor.ReadToEnd();
-            var pokemons = JsonSerializer.Deserialize<List<Pokemon>>(dados);
-            return View(pokemons);
-        }
-        
+       return View();
     }
+
+    
+
     public IActionResult Privacy()
     {
         return View();
